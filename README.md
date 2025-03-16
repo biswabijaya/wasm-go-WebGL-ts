@@ -48,8 +48,8 @@ cd wasm-go-WebGL-ts
 2. **Set up Go for WebAssembly**
 
 ```bash
-# Copy the WebAssembly support file
-cp "$(go env GOROOT)/misc/wasm/wasm_exec.js" .
+# Copy the WebAssembly support file | If Mac
+cp "/usr/local/go/lib/wasm/wasm_exec.js"
 
 # Build the Go WebAssembly module
 GOOS=js GOARCH=wasm go build -o main.wasm wasm.go

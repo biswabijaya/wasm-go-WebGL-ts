@@ -24,6 +24,8 @@ yarn-debug.log
 .vscode/
 *.sublime-project
 *.sublime-workspace
+*.vscode/
+*.code-workspace
 
 # OS
 .DS_Store
