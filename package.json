@@ -1,0 +1,34 @@
+{
+    "name": "wasm-go-webgl-ts",
+    "version": "1.0.0",
+    "description": "WebAssembly + WebGL Integration Example",
+    "main": "dist/bundle.js",
+    "scripts": {
+        "build": "webpack",
+        "start": "http-server ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/biswabijaya/wasm-go-WebGL-ts.git"
+    },
+    "keywords": [
+        "webassembly",
+        "webgl",
+        "go",
+        "typescript",
+        "wasm"
+    ],
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/biswabijaya/wasm-go-WebGL-ts/issues"
+    },
+    "homepage": "https://github.com/biswabijaya/wasm-go-WebGL-ts#readme",
+    "devDependencies": {
+        "http-server": "^14.1.1",
+        "ts-loader": "^9.4.2",
+        "typescript": "^5.0.4",
+        "webpack": "^5.81.0",
+        "webpack-cli": "^5.0.2"
+    }
+}
