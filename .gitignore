@@ -21,10 +21,8 @@ yarn-debug.log
 
 # IDE
 .idea/
-.vscode/
 *.sublime-project
 *.sublime-workspace
-*.vscode/
 *.code-workspace
 
 # OS

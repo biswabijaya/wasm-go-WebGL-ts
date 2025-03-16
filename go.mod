@@ -1,3 +1,3 @@
-module biswabijaya.com/go
+module example.com/go
 
 go 1.24.1
