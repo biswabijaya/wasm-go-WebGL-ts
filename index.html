@@ -16,8 +16,8 @@
   <div id="overlay">
     <h2>CPU vs GPU Computation</h2>
     <div>
-      <h3>CPU (WebAssembly / Go)</h3>
-      <input id="factorialInput" type="number" value="10" min="1" max="20">
+      <h3>CPU (WebAssembly / Go) Max - 65</h3>
+      <input id="factorialInput" type="number" value="10" min="1" max="65">
       <button id="computeFactorial">Compute Factorial</button>
       <div id="factorialResult"></div>
     </div>
@@ -29,9 +29,9 @@
   </div>
   
   <!-- This script loads the Go WASM runtime -->
-  <script src="wasm_exec.js"></script>
+  <script src="wasm_exec.js?v=1.2"></script>
   
   <!-- Your bundled TypeScript code -->
-  <script src="dist/bundle.js"></script>
+  <script src="dist/bundle.js?v=1.2"></script>
 </body>
 </html>

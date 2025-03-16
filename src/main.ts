@@ -2,6 +2,9 @@ import { WasmLoader } from './wasmLoader';
 import { WebGLCompute } from './webglCompute';
 
 document.addEventListener('DOMContentLoaded', async () => {
+
+  console.log('DOMContentLoaded called in main.ts');
+  
   // Set up the canvas
   const canvas = document.getElementById('glCanvas') as HTMLCanvasElement;
   canvas.width = window.innerWidth;
@@ -37,13 +40,17 @@ document.addEventListener('DOMContentLoaded', async () => {
     time += 0.01;
     gpuCompute.compute(time);
     requestAnimationFrame(animate);
+    console.log(`Animate called`, time, gpuCompute);
   };
-  
+
   animate();
   
   // Handle window resize
   window.addEventListener('resize', () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+    console.log(`Canvas resized to ${window.innerWidth}x${window.innerHeight}`);
+    // Update the viewport
+    // animate();
   });
 });
